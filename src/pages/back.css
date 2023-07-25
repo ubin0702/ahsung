@@ -1,0 +1,18 @@
+
+  
+
+.back {
+    position: absolute;
+
+    left: 20px;
+    bottom: 723px;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+ 
+  
