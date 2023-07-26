@@ -1,8 +1,9 @@
-// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Splash from './pages/Splash'; // Splash 컴포넌트를 불러옵니다.
-import Page1 from './pages/Page1';
+import Splash from './pages/Splash';
+import Login_franchise from './pages/Login_franchise';
+import Login_manager from'./pages/Login_manager';
 
 
 
@@ -12,7 +13,8 @@ function App() {
       <Switch>
 
         <Route path="/" exact component={Splash} />
-        <Route path="/page1" component={Page1} />
+        <Route path="/Login_franchise" component={Login_franchise} />
+        <Route path="/Login_manager" component={Login_manager} />
  
 
       </Switch>

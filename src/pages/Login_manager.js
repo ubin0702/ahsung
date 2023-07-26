@@ -1,10 +1,10 @@
-// Page1.js
+
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './logo1.css'; 
 import './back.css';
 
-const Page1 = () => {
+const Login_manager = () => {
   const history = useHistory();
 
   const handleGoBack = () => {
@@ -24,8 +24,8 @@ const Page1 = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // 여기서 로그인 처리를 수행하거나 다른 로직을 추가할 수 있습니다.
-    console.log('이메일:', email);
+  
+    console.log('아이디:', email);
     console.log('비밀번호:', password);
   };
 
@@ -38,7 +38,7 @@ const Page1 = () => {
  
         <form onSubmit={handleSubmit}>
           <div>
-            <label>가맹점 코드</label>
+            <label>아이디</label>
             <input type="email" value={email} onChange={handleEmailChange} required />
           </div>
           <div>
@@ -52,4 +52,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Login_manager;
